@@ -8,5 +8,5 @@ test('Return string length 7', () => {
 
 test('Return error if str length is less than 1', () => {
   expect(stringLength(str)).toBeGreaterThan(0);
-  expect(stringLength(str)).toBeLessThan(10);
+  expect(stringLength(str)).toBeLessThanOrEqual(10);
 });

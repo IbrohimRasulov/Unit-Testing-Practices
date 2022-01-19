@@ -15,5 +15,5 @@ describe('Calculator', () => {
 
   test('2 * 3 = 6', () => {
     expect(calculator.multiply(2, 3)).toBe(6)
-  })
-})
+  });
+});
