@@ -1,13 +1,12 @@
 const stringLength = require('./stringLength');
 
+str = 'Ibrohim';
+
 test('Return string length 7', () => {
-  expect(stringLength('Ibrohim')).toBe(7);
+  expect(stringLength(str)).toBe(7);
 });
 
 test('Return error if str length is less than 1', () => {
-  expect(stringLength('')).toThrow(Error);
-});
-
-test('Return error if str length is more than 10', () => {
-  expect(stringLength('helloWorld')).toThrow(Error);
+  expect(stringLength(str)).toBeGreaterThan(0);
+  expect(stringLength(str)).toBeLessThan(10);
 });
